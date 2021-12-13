@@ -1,9 +1,16 @@
 package com.intertech.lab1;
 
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 public class Startup {
 
+	@SuppressWarnings({ "resource", "unused" })
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		ClassPathXmlApplicationContext context = new 
+				ClassPathXmlApplicationContext("/META-INF/spring/si-components.xml");
+				while (true) {
+				}
+
 
 	}
 
